@@ -1,0 +1,23 @@
+$red: red;
+body {
+  color: $red;
+}
+button {
+  color: black;
+}
+p {
+  text-align: center;
+}
+
+
+// Nested styles
+.page-home {
+  button {
+
+    padding: 5px;
+    &:hover {
+      padding: 10px;
+    }
+    
+  }
+}

@@ -1,0 +1,44 @@
+.container {
+  min-height: calc(100vh - 70px);
+  background: dimgrey;
+  display: flex;
+
+  .left-sidebar {
+    width: 22%;
+    background: #b3afaf;
+  }
+
+  .right-bar {
+    display: flex;
+    width: 80%;
+    background: #dfe2df;
+    justify-content: space-around;
+
+    .cards-row {
+      height: 250px;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+
+      .cards {
+        width: 42%;
+        background:red;
+        height: 250px;
+      }
+
+    }
+
+    .cards-row1 {
+      height: 250px;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+
+      .cards {
+        width: 42%;
+        background: red;
+        height: 250px;
+      }
+    }
+  }
+}

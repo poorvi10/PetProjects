@@ -1,0 +1,77 @@
+.container {
+  min-height: calc(100vh - 70px);
+  background: dimgrey;
+  display: flex; }
+  .container .left-sidebar {
+    width: 22%;
+    background: #b3afaf; }
+  .container .right-bar {
+    display: flex;
+    width: 80%;
+    background: #dfe2df;
+    justify-content: space-around; }
+    .container .right-bar .cards-row {
+      height: 250px;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly; }
+      .container .right-bar .cards-row .cards {
+        width: 42%;
+        background: red;
+        height: 250px; }
+    .container .right-bar .cards-row1 {
+      height: 250px;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly; }
+      .container .right-bar .cards-row1 .cards {
+        width: 42%;
+        background: red;
+        height: 250px; }
+
+footer {
+  position: relative;
+  bottom: 0px;
+  height: 10vh;
+  color: #fff;
+  text-align: center;
+  background: black; }
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  height: 50px;
+  color: #000;
+  font-size: 38px;
+  box-shadow: 0px 2px 9px #bdb8b8;
+  position: fixed;
+  width: 100%;
+  background: #fff; }
+  header .logo {
+    width: 20%;
+    color: #b2a5bf;
+    text-align: center; }
+  header .breadcrumbs {
+    width: 80%; }
+    header .breadcrumbs ul {
+      display: flex;
+      list-style-type: none;
+      justify-content: space-evenly;
+      font-size: 23px; }
+
+.accordian {
+  color: green; }
+
+body {
+  color: red; }
+
+button {
+  color: black; }
+
+p {
+  text-align: center; }
+
+.page-home button {
+  padding: 5px; }
+  .page-home button:hover {
+    padding: 10px; }
