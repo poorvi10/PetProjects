@@ -1,0 +1,21 @@
+<div class="card" *ngFor="let post of postList, let i=index">
+  <span>{{i}}</span>
+  <h1>{{post.title}}</h1>
+  <p>{{post.body}}</p>
+  <a [routerLink]="['post-detail', post.id]">View detail</a> 
+  // For dynamic routing put sq brackets in 
+</div>
+
+<p appHover="yellow">testtttt</p>
+
+<p [style.backgroundColor] = "'yellow'"></p>
+
+
+
+
+
+
+
+
+
+

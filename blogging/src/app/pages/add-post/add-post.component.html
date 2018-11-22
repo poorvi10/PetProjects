@@ -1,0 +1,27 @@
+<!-- <div>
+  <div [hidden]="initial">
+    <div *ngIf="response; else responseError">
+      Success
+    </div>
+    <div >
+
+    </div>
+  </div>
+</div> -->
+
+
+<form [formGroup] = "addPostForm" (submit)="addPost(addPostForm.value)">
+  <div class="form-group">
+    <label for="post-name">Post name</label>
+    <input type="text"  [class.error-field] ="!addPostForm.controls.title.valid && addPostForm.controls.title.touched" formControlName="title" id="post-name">
+    
+    <div class="error" *ngIf="!addPostForm.controls.title.valid && addPostForm.controls.title.touched" >Required</div>
+  </div>
+  <div class="form-group">
+    <label for="post-name">Post Description</label>
+    <textarea type="text" [class.error-field]="!addPostForm.controls.body.valid && addPostForm.controls.body.touched"  formControlName="body" name="post-name" id="post-name"></textarea>
+    <div class="error" *ngIf="!addPostForm.controls.title.valid && addPostForm.controls.title.touched">Required</div>
+
+  </div>
+  <button type="submit" >Submit</button>
+</form>
