@@ -1,0 +1,23 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: center;
+  background-color: black;
+}
+.flex-container li {
+  padding: 10px;
+  background-color: beige;
+}
+li:first-child {
+  color: blue;
+}
+li:nth-child(2) {
+  color: green;
+}
+li:nth-child(3) {
+  color: greenyellow;
+}
+header {
+  height:50px;
+}
